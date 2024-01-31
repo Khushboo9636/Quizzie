@@ -10,22 +10,22 @@ const questionSchema = new mongoose.Schema({
             {
                 text: {
                     type: String,
-                    required: true,
+                    
                 },
                 imageURL : {
                     type: String,
-                    default: null,
+                    
                 },
             },
         ],
         require: true,
-        validate: {
-            validator: function (value) {
-                return value.length >= 2 && value.length <= 5;
+        // validate: {
+        //     validator: function (value) {
+        //         return value.length >= 2 && value.length <= 5;
 
-            },
-            message: 'Option should be array with at least 2 and at most 5 option',
-        },
+        //     },
+        //     message: 'Option should be array with at least 2 and at most 5 option',
+        // },
     },
     answer: {
         type: String,
@@ -36,11 +36,15 @@ const questionSchema = new mongoose.Schema({
         enum: ['Text', 'Image URL', 'Text & Image URL'],
         required: true,
     },
+    timer: {
+        type: Number,
+        default: null, 
+    },
     selectedCount: {
         type: Number,
         default : 0,
     },
-});
+}, {timestamps: true});
 
 const quizSchema = new mongoose.Schema({
     user: {
@@ -82,7 +86,7 @@ const quizSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     }
-});
+}, {timestamps: true});
 
 const Quiz = mongoose.model('Quiz', quizSchema);
 

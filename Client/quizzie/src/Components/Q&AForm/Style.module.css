@@ -1,0 +1,186 @@
+.popup{
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.buttonNo{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+.delQuest{
+    background: white;
+    position: absolute;
+    margin: -11px;
+    top: 123px;
+    border: transparent;
+    border-radius: 23px;
+}
+.questionNumber{
+    border: 2px double #60b84b;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+
+}
+
+.addButton{
+    cursor: pointer;
+    font-size: 1.3rem;
+
+}
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    margin: 15px;
+    margin-top: 35px;
+
+}
+.questionInput{
+    height: 46px;
+
+}
+.QAquestionInput{
+    background: #fff;
+    border: none;
+    border-radius: .625rem;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,.15);
+    font-size: 1rem;
+    padding: .45rem .7rem;
+    width: -webkit-fill-available;
+    height: 32px;
+
+}
+.optionTypeContainer{
+    display: flex;
+    height: 50;
+    align-items: center;
+}
+.optionTypeText{
+    margin-right: 1.5rem;
+}
+.labelType{
+    cursor: default;
+}
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+input[type=radio]:checked {
+    color: #60b84b;
+}
+.inputContent{
+    display: flex;
+    
+    padding-top: 30px;
+}
+.optionsGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.optionsInput{
+    border: none;
+    border-radius: .625rem;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,.15);
+    margin-bottom: .6rem;
+    margin-left: .4rem;
+    padding: .5rem;
+}
+input[type="text" i] {
+    /* padding-block: 1px;
+    padding-inline: 2px; */
+}
+
+.input[type="url" i] {
+    /* padding-block: 1px;
+    padding-inline: 2px; */
+}
+.optionRadio{
+    float: left;
+    padding-top: 7px;
+}
+
+.optionsInput{
+    height: 30px;
+    width: 65%;
+    float: left;
+}
+.imgDel{
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 12%;
+}
+.timmer{
+    margin-left: 22px;
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    justify-content: space-between;
+    float: right;
+
+}
+.timming{
+    margin-right: auto;
+    float: right;
+    margin-right: 32px;
+    padding-left: 15px;
+    padding-top: 35px;
+}
+
+.btnGroup{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    width: -webkit-fill-available;
+}
+.label{
+    cursor: default;
+}
+.cancelBtn{
+    background: #fff;
+    border: none;
+    border-radius: .625rem;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.25);
+    cursor: pointer;
+    flex: 1 1;
+    padding: .5rem;
+    transition-duration: .4s;
+}
+.createBtn{
+    background: #60b84b;
+    border: none;
+    border-radius: .625rem;
+    color: #fff;
+    flex: 1 1;
+    padding: .5rem;
+    transition-duration: .4s;
+}
+.addOption{
+    background: #fff;
+    border: none;
+    border-radius: .625rem;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.25);
+    cursor: pointer;
+    flex: 1 1;
+    padding: .5rem;
+    transition-duration: .4s;
+    color: #9F9F9F;
+    width: 70%;
+
+}

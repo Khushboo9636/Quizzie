@@ -1,0 +1,128 @@
+.mainContainer{
+     width: 80vw;
+     height: 100vh;
+
+    display: flex;
+      flex-flow: column;
+
+}
+.topContainer{
+    width: 76vw;
+    height: 30vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    gap: 1.5rem;
+    padding-left: 21px;
+    padding-bottom: 30px;
+
+}
+.quiznum{
+    font-size: 2.7rem;
+    float: left;
+    text-align: center;
+    margin-left: 92px;
+}
+
+.quizCreated{
+    background: #fff;
+    border-radius: .625rem;
+    flex: 1 1;
+    font-size: 1.55rem;
+    font-style: normal;
+    font-weight: 550;
+    padding-top: 70px;
+    text-align: center;
+    color: #ff5d01;
+
+}
+.questions{
+    background: #fff;
+    border-radius: .625rem;
+    flex: 1 1;
+    font-size: 1.55rem;
+    font-style: normal;
+    font-weight: 550;
+    padding-top: 70px;
+    text-align: center;
+    color: #60B84B;
+
+}
+.impression{
+    background: #fff;
+    border-radius: .625rem;
+    flex: 1 1;
+    font-size: 1.55rem;
+    font-style: normal;
+    font-weight: 550;
+    padding-top: 70px;
+    text-align: center;
+    color: #5076FF;
+
+}
+
+.bottomContainer{
+    width: 80vw;
+    height: 70vh;
+    
+}
+.quizTrending{
+width: 80vw;
+}
+.showImp{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    height: 5vh;
+    padding-top: 6px;
+}
+.create{
+    color: #60b84b;
+    font-size: .7rem;
+    padding-bottom: 5px;padding-left: 5px;
+}
+.h1{
+    color: #474444;
+font-size: 32px;
+font-family: Poppins;
+font-weight: 600;
+word-wrap: break-word;
+margin-left: 60px;
+}
+.numberOfQuiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 16px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+   
+  }
+  
+  .quizItem {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    height: 11vh;
+    background-color: white;
+    display: flex;
+   
+    flex-flow: column;
+  }
+  .numb{
+    color: #ff5d01;
+    margin-left: auto;
+    margin-right: 0rem;
+
+
+  }
+  .img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.name{
+    padding: 5px;
+    font-family:Poppins;
+    color:#474444;
+}

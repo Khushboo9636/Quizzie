@@ -1,0 +1,78 @@
+.body{
+    background-color: aliceblue;
+}
+.main{
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+    background-color: white;
+
+}
+.mainContainer{
+    width: 100vw;
+    height: 120vh;
+    
+    position: absolute;
+    top: 0px;
+    background-color: #F2F2F2;
+}
+.innerContainer{
+    align-items: center;
+    width: 70vw;
+    height: 92vh;
+    left: 100px;
+    top: 30px;
+    margin: 33px;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 30px;
+    /* padding-right: 49px; */
+    /* margin-left: 143px; */
+}
+.heading{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    height: 10vh;
+}
+.h1{
+    color: #474444;
+    font-size: 40px;
+    font-family: Jomhuria;
+    font-weight: 700;
+    word-wrap: break-word;
+
+}
+.btns{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 10px;
+    height: 10vh;
+}
+.buttons{
+    width: 25%;
+    font-size: larger;
+    height: 30px;
+    font-weight: 500;
+    background: white;
+    box-shadow: 0px 0px 50px rgb(239, 240, 243);
+    border-radius: 10px;
+    border: transparent;
+}
+.formSection{
+    margin: 50px;
+ 
+}
+
+  .active {
+    box-shadow: 0px 0px 50px rgba(0, 25.50, 255, 0.24);
+ 
+    color: #1b1616;  
+  }

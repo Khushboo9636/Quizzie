@@ -1,0 +1,31 @@
+
+.QmodalOverlay{
+    align-items: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,.2);
+    color: #9f9f9f;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.Qmodallayer {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 70vh;
+    padding: 2.5rem;
+    width: 36vw;
+    margin: 80px;
+   
+}
+.QmodalContent{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    height: 0vh;
+}
+

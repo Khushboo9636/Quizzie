@@ -1,0 +1,46 @@
+.questionItem{
+    width: 80vw;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    
+    
+
+}
+.h1{
+    margin-left: 23px;
+    padding: 20px;
+}
+.topContainer{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.title{
+    padding-left: 68px;
+}
+
+.totalAttempts{
+    width: 20vw;
+    height: 25vh;
+    background-color: #ffff;
+    color: #FF5D01;
+
+
+}
+.correctAttempt{
+    width: 20vw;
+    height: 25vh;
+    background-color: #ffff;
+    color: #60B84B;
+
+}
+.incorrect{
+    width: 20vw;
+    height: 25vh;
+    background-color: #ffff;
+    color: #5076FF;
+
+}

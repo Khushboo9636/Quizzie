@@ -1,0 +1,131 @@
+.body{
+    background: #f2f2f2;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.Quiz_mainContainer {
+    min-height: 90vh;
+}
+.quiz_questionContent{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 100vh;
+    padding: 1.5rem;
+
+}
+.header{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding: .5rem; 
+}
+
+.questions_container{
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-top: 1.5rem;
+    text-align: center;
+
+}
+.next_Submit{
+    background: #60b84b;
+    border: none;
+    border-radius: .625rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding: .55rem 3rem;
+    transition-duration: .4s;
+}
+.questTimer{
+        color: #f84242;
+
+}
+.questions_container{
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.quizTitle{
+    text-align: center;
+}
+.quiz_options{
+    /* grid-gap: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  padding: 1rem;
+
+}
+.option{
+    background: #f0f0f0;
+    border-radius: .625rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+.optionFlexContainer{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 600px){
+.Quiz_mainContainer {
+    background: #041325;
+    height: -webkit-fill-available;
+    padding: 3rem;
+    width: -webkit-fill-available;
+}
+.quiz_questionContent{
+    border-radius: 1rem;
+    gap: .7rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    padding: 2.5rem;
+    width: 80%;
+}
+
+    .questions_container{  
+      margin-top: 0;
+    }
+    .next_Submit{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 20rem;
+    }
+    .questions_container
+    {
+        margin-top: 0;
+    }
+    .quiz_options{
+        /* display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        padding: 1rem; */
+
+        grid-gap: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+
+
+    }
+    .option{
+
+        padding: 2rem 1rem;
+    }
+}
