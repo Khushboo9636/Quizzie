@@ -435,7 +435,7 @@ function QuizPlay() {
     useEffect(() => {
         const fetchQuizData = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/api/quiz/take/${quizId}`);
+                const response = await fetch(`https://quiz-api-djxd.onrender.com/api/quiz/take/${quizId}`);
                 if (response.ok) {
                     const data = await response.json();
                     setQuiz(data);

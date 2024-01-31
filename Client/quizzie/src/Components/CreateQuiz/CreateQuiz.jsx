@@ -90,7 +90,7 @@ function CreateQuiz({data, onClose }) {
     
             // Proceed with quiz creation request
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:4000/api/quiz/create', {
+            const response = await fetch('https://quiz-api-djxd.onrender.com/api/quiz/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ function CreateQuiz({data, onClose }) {
 
                 const quizId = data._id;
                 // Generate shareable link for the quiz
-               const shareResponse = await fetch(`http://localhost:4000/api/quiz/share/${quizId}`, {
+               const shareResponse = await fetch(`https://quiz-api-djxd.onrender.com/api/quiz/share/${quizId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -131,7 +131,7 @@ function CreateQuiz({data, onClose }) {
                        setShowShareModal(true);
 
     
-               const updateResponse = await fetch(`http://localhost:4000/api/quiz/update/${quizId}`, {
+               const updateResponse = await fetch(`https://quiz-api-djxd.onrender.com/api/quiz/update/${quizId}`, {
                     method: 'PUT',
                      headers: {
                           'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ function QuizAnalysisPage({ onQuizRowClick }) {
     const fetchQuizzes = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:4000/api/quiz/getAllQuiz', {
+            const response = await fetch('https://quiz-api-djxd.onrender.com/api/quiz/getAllQuiz', {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`
@@ -42,7 +42,7 @@ function QuizAnalysisPage({ onQuizRowClick }) {
     const handleEdit = async (quizId) => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`http://localhost:4000/api/quiz/edit/${quizId}`, {
+            const response = await fetch(`https://quiz-api-djxd.onrender.com/api/quiz/edit/${quizId}`, {
                    method: 'PUT', 
             headers: {
                 "Content-Type": "application/json", 
@@ -64,7 +64,7 @@ function QuizAnalysisPage({ onQuizRowClick }) {
     const handleDelete = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`http://localhost:4000/api/quiz/delete/${selectedQuiz._id}`, {
+            const response = await fetch(`https://quiz-api-djxd.onrender.com/api/quiz/delete/${selectedQuiz._id}`, {
                 method: 'DELETE',
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -96,7 +96,7 @@ function QuizAnalysisPage({ onQuizRowClick }) {
     const copyShareableLink = async (quizId) => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`http://localhost:4000/api/quiz/share/${quizId}`, {
+            const response = await fetch(`https://quiz-api-djxd.onrender.com/api/quiz/share/${quizId}`, {
                 method: 'POST',
                 headers: {
                     "Authorization": `Bearer ${token}`

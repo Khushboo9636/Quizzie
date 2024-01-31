@@ -16,7 +16,7 @@ function Dashboard() {
         throw new Error('No token found');
       }
 
-      const response = await fetch("http://localhost:4000/api/quiz/totalValues", {
+      const response = await fetch("https://quiz-api-djxd.onrender.com/quiz/totalValues", {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ function Dashboard() {
         throw new Error('No token found');
       }
 
-      const response = await fetch("http://localhost:4000/api/quiz/trending", {
+      const response = await fetch("https://quiz-api-djxd.onrender.com/api/quiz/trending", {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -13,7 +13,7 @@ function QuestionAnalysisPage() {
         const fetchAnalytics = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await fetch(`http://localhost:4000/api/quiz/analytics/${quizId}`, {
+                const response = await fetch(`https://quiz-api-djxd.onrender.com/api/quiz/analytics/${quizId}`, {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                     },
