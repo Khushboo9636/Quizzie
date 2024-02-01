@@ -22,6 +22,7 @@ function SignUp({setSignupSuccess }) {
  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Click on submit button');
+   console.log(formData);
     
     //check for email and name
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
