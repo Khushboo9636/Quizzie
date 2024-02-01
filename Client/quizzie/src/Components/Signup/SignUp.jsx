@@ -49,9 +49,9 @@ function SignUp({setSignupSuccess }) {
     const response = await fetch("https://quiz-api-djxd.onrender.com/api/user/register", {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/json",
       },
-      body: new URLSearchParams(formData)
+      body: JSON.stringify(formData)
     });
 
     if (!response.ok) {
