@@ -31,6 +31,12 @@ function SignUp({setSignupSuccess }) {
       alert('Name is invalid. Only contain alphabets.')
       return;
     }
+    // Check if password is less than 5 characters
+     if (formData.password.length < 5) {
+         alert('Password must be at least 5 characters long');
+        return; // Prevent form submission
+       }
+
     if(!formData.email.match(emailPattern)) {
       alert('Invalid email');
       return;
@@ -58,13 +64,18 @@ function SignUp({setSignupSuccess }) {
       throw new Error("Network response was not ok");
     }
 
-    const responseData = await response.json();
-    console.log(responseData);
+    
+  const responseData = await response.json();
+  const { user, token } = responseData; // Destructure user and token from the response data
 
-    window.localStorage.setItem("user", responseData.user);
-    window.localStorage.setItem("name", responseData.name);
-    window.localStorage.setItem("token", responseData.token);
-    setSignupSuccess(true);
+  console.log(user); // Log user information
+  console.log(token); // Log authentication token
+
+  // Save user information and token to local storage or state
+  window.localStorage.setItem("user", JSON.stringify(user));
+  window.localStorage.setItem("name", user.name);
+  window.localStorage.setItem("token", token);
+  setSignupSuccess(true); // Set signup success state
     
 
   } catch (error) {

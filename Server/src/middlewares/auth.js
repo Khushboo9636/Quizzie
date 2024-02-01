@@ -4,6 +4,13 @@ const User = require("../models/user.model.js");
 
 const registerUser = async (userData) => {
     try {
+         
+        // Check if the email already exists in the database
+        const existingUser = await User.findOne({ email: userData.email });
+        if (existingUser) {
+            throw new Error("Email already exists");
+        }
+
         const newUser  = new User(userData);
         await newUser.save();
         console.log(newUser,"Data Save successfully");
