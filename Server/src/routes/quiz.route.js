@@ -347,7 +347,7 @@ router.post('/share/:quizId', async(req, res) => {
   
 //    const shareableLink = `${req.protocol}://${req.get('host')}/api/quiz/take/${quizId}`;
 const backendShareableLink = `${req.protocol}://${req.get('host')}/api/quiz/take/${quizId}`;
-const frontendShareableLink = `http://localhost:3000/take/${quizId}`;
+const frontendShareableLink = `https://khushisinha011-gmail-com-cuvette-final-evaluation-june.vercel.app/take/${quizId}`;
 //    quiz.shareableLink = shareableLink;
 //    await quiz.save();
 
