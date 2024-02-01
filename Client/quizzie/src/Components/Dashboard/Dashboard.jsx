@@ -16,7 +16,7 @@ function Dashboard() {
         throw new Error('No token found');
       }
 
-      const response = await fetch("https://quiz-api-djxd.onrender.com/quiz/totalValues", {
+      const response = await fetch("https://quiz-api-djxd.onrender.com/api/quiz/totalValues", {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
